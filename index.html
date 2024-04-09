@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¡Una página para Danae!</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .jumbotron {
+      background-color: #343a40;
+      color: white;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+    .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #0056b3;
+    }
+    .gallery-img {
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .gallery-img img {
+      transition: filter 0.3s;
+    }
+    .gallery-img:hover img {
+      filter: brightness(70%);
+    }
+    .img-caption {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 0.3s;
+      color: white;
+    }
+    .gallery-img:hover .img-caption {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Reproductor de YouTube -->
+<div class="container-fluid bg-dark">
+  <div class="row justify-content-center">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/QGFB4kxhh2k" frameborder="0" allowfullscreen></iframe>
+
+  </div>
+</div>
+
+<!-- Encabezado -->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">10/5/2024</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Sobre Danae</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Galería</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#letters">Cartas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Proyectos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron jumbotron-fluid text-center">
+    <div class="container">
+      <h1 class="display-4">Downae</h1>
+      <p class="lead">+1</p>
+      <a class="btn btn-primary btn-lg" href="#about" role="button">Sobre Danae</a>
+    </div>
+  </div>
+</header>
+
+<!-- Sobre Danae -->
+<section id="about" class="py-5 text-center">
+  <div class="container">
+    <h2 class="mb-4">Sobre Danae</h2>
+    <p class="lead">Hola, quie decirte todo lo que siento pq en persona no me sale, no por cagon (si es por cagon) sino que soy un ROCKSTAR TERRRRRRRIBLE, o como decis vos TEGRRRRRRIBLE, joda, ahora si. Bueno la verdad es que por mas que nos conozcamos hace poco y capaz no te conozca lo suficiente como para decirte como sos, pero te voy a decir como sos conmigo. Siento que sos una persona que me está dando mucho, en todo sentido no solo por los regalos, mas que nada porque me siento muy querido, es la primera vez que me pasa esto, de que una persona que no es de mi familia me quiera tanto de verdad y me lo demuestre todos los dias y eso me hace pensar a veces que yo soy medio malo, pq yo no soy tan expresivo soy un seco que sabe decir "Yo mas" nomas (deaaaaaaaaaaa se ponia a bardearse nada q ver NDEAAAAAAAAAAAAAAAAAAAAAA UWU) Bueno, la verdad es que estoy re feliz al lado tuyo y quiero que esto dure muchisimo (para siempre) pq sos una persona que no me para de hacer feliz. te amo muchisimooooo </p>
+  </div>
+</section>
+
+<!-- Galería -->
+<section id="gallery" class="py-5 bg-light text-center">
+  <div class="container">
+    <h2 class="mb-4">Galería</h2>
+    <p class="lead text-center">Las fotitos que mas me gustan de vos</p>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="gallery-img">
+          <img src="img/foto_danae.jpeg" class="img-fluid" alt="Foto de Danae">
+          <div class="img-caption">sos hermosa</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="gallery-img">
+          <img src="img/imagen2.jpeg" class="img-fluid" alt="Imagen 2">
+          <div class="img-caption">me encanta cuando sonreis</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="gallery-img">
+          <img src="img/imagen3.jpeg" class="img-fluid" alt="Imagen 3">
+          <div class="img-caption">muy asteka</div>
+        </div>
+      </div>
+      <!-- Nuevas imágenes -->
+      <div class="col-md-4">
+        <div class="gallery-img">
+          <img src="img/nueva_imagen1.jpeg" class="img-fluid" alt="Nueva imagen 1">
+          <div class="img-caption">enamorado de ese ojo</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="gallery-img">
+          <img src="img/nueva_imagen2.jpeg" class="img-fluid" alt="Nueva imagen 2">
+          <div class="img-caption">pusherito</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="gallery-img">
+          <img src="img/nueva_imagen3.jpeg" class="img-fluid" alt="Nueva imagen 3">
+          <div class="img-caption">basta me</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Cartas -->
+<section id="letters" class="py-5 text-center">
+  <div class="container">
+    <h2 class="mb-4">Cartas</h2>
+    <!-- Botones de cartas -->
+    <div class="row">
+      <div class="col-md-4">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#carta1Modal">Carta 1</button>
+      </div>
+      <div class="col-md-4">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#carta2Modal">Carta 2</button>
+      </div>
+      <div class="col-md-4">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#carta3Modal">Carta 3</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modales de Cartas -->
+<!-- Carta 1 -->
+<div class="modal fade" id="carta1Modal" tabindex="-1" role="dialog" aria-labelledby="carta1ModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="carta1ModalLabel">Carta 1</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Chu.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Carta 2 -->
+<div class="modal fade" id="carta2Modal" tabindex="-1" role="dialog" aria-labelledby="carta2ModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="carta2ModalLabel">Carta 2</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Pa.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Carta 3 -->
+<div class="modal fade" id="carta3Modal" tabindex="-1" role="dialog" aria-labelledby="carta3ModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="carta3ModalLabel">Carta 3</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        La.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contenido adicional -->
+<p class="lead text-center">Quiero aprovechar este espacio para agradercerte pq la verdad no entiendo a veces pq sos tan buena si yo no te doy nada, primero gracias por el cenicero de ysy a, me re gustaba mal ahi q se rompio, gracias por la carta esa hermosa que me diste y los 100 besitos posta que no me lo esperaba y me re gustan esos detalles, me dan ganas de abrazarte te odio. gracias tmb por todos los momentos lindos que me haces pasar, gracias por ser una persona re linda, gracias por entenderme, gracias por siempre estar, gracias por sacarme una sonrisa siempre, gracias por hacerme sentir unico, gracias por ser cariñosa, molesta, down, sensible o mejor dicho gracias por ser como sos, me encanta todo de vos o mejor dicho me encantas vos. Me encantas tanto que te estoy haciendo tu propia pagina, no se si voy a llegar a dartelo para nuestro aniversario :c es 4/4 y son las 4:34 de la mañana, justo como te puse. No me dan mas los ojos estoy sentado programando esto hace 3 horas tengo el orto todo re cuadrado pero voy a seguir pq necesito que sepas cuanto te amo y aunque no llegue te lo voy a dar (pero te voy a hacer creer que no tengo ningun regalo jeje te amooo muamuamua) pq de todas formas lo voy a ir actualizando y agregando cosas tuyas cada vez que no estes y te extrañe, pq se que no me se expresar y tampoco se si esta es una buena forma de expresarlo pero es lo q me nació, ojala te guste mucho y sino te gusta decimelo rompo la compu de un cabezazo. TE AMO MUCHISIMOOOO</p>
+
+<!-- Proyectos -->
+<section id="projects" class="py-5 bg-light text-center">
+  <div class="container">
+    <h2 class="mb-4">Proyectos Futuros</h2>
+    <!-- Aquí puedes programar proyectos futuros con Danae -->
+    <p class="lead">voy a dejar esta seccion para ir poniendo nuestros proximos proyectos muamua</p>
+  </div>
+</section>
+
+<!-- Pie de página -->
+<footer class="py-4 bg-dark text-white text-center">
+    <div class="container">
+      <p>&copy; teamo</p>
+      <p class="lead">Bueno, ahora que terminaste de leer, <a href="https://www.instagram.com/franedn_/" target="_blank">hablamee!</a> Te extraño mucho.</p>
+    </div>
+  </footer>
+  
+
+<!-- Scripts de Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
